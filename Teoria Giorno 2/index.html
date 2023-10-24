@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Mia Tab</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Città</th>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td>Roma</td>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td>Roma</td>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td>Roma</td>
+        </tr>
+        <tr>
+            <td colspan="2">Totale</td>
+            <td>3</td>
+        </tr>
+    </table>
+    
+    <hr>
+
+    <form method="post" action="miaPaginaDelServer.php">
+        <fieldset>
+            <legend>Mio Form</legend>
+            <label for="mionome">Nome:</label>
+            <input type="text" name="nome" id="mionome" autofocus min="10">
+            <label for="miocognome">Cognome:</label>
+            <input type="text" name="cognome" id="miocognome">
+            <label for="miaeta">Età:</label>
+            <input type="number" name="eta" id="miaeta" value="18">
+            <label for="miaemail">Email:</label>
+            <input type="email" name="email" id="miaemail" placeholder="mail@example.com">
+            <label for="miapassword">Password:</label>
+            <input type="password" name="password" id="miapassword" required>
+            <label for="miaDataNascita">Data di nascita:</label>
+            <input type="date" name="datanascita" id="miaDataNascita">
+            <label for="mieiLinguaggi">Linguaggi:</label>
+            <select name="linguaggi" id="mieiLinguaggi">
+                <optgroup label="Easy">
+                    <option value="">Javascript</option>
+                    <option value="">Php</option>
+                </optgroup>
+                <optgroup label="Hard">
+                    <option value="">Java</option>
+                    <option value="">C#</option>
+                </optgroup>
+                
+            </select>
+            <textarea name="note" id="" cols="30" rows="10" placeholder="Inserisci note..."></textarea>
+            <button type="submit" disabled>Invia</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <hr>
+
+    <iframe src="" frameborder="0"></iframe>
+
+    <hr>
+
+    <div id="header">
+        <div id="nav">
+            <ul>
+                <li>Home</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <!-- contenuto della pagina-->
+    </div>
+    <div id="footer">
+        <!-- riferimenti ed indirizzi della pagina-->
+    </div>
+</body>
+</html>
