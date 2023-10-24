@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <title>Sviluppo di una pagina web - Blog Epicode</title>
 </head>
 <body>
     <header>
-        <img src="../Esercizio Giorno 2/assets/img/logo.svg" alt="logo Epicode">
-        <h1>Epicode - Il blog dei developers</h1>
+        <div>
+            <img src="../Esercizio Giorno 2/assets/img/logo.svg" alt="logo Epicode">
+            <h1>Epicode - Il blog dei developers</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" title="">Home</a></li>
+                <li><a href="#" title="">Articoli</a></li>
+                <li><a href="#" title="">Lavora con noi</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Articoli</a>
-        <a href="#">Lavora con noi</a>
-    </nav>
+    
     <main>
         <article>
             <h3>Come creare un template per i post di Mario Rossi - pubblicato il 25-10-2020</h3>
-            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni
+            <p> La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni
                 da applicare a tutte le pagine 
             </p>
 
@@ -29,7 +35,7 @@
                 <li>Contenuti di fine pagina comuni, da inserire nel tag &#60;footer&#62;</li>
             </ul>
 
-            <p>Formattazione del codice</p>
+            <h2>Formattazione del codice</h2>
 
             <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS.
                  Perciò i passi saranno:
@@ -43,40 +49,45 @@
 
             <table>
                 <caption>Diffusione dei CSS</caption>
-                <tr>
-                    <th>Anno</th>
-                    <th>% di utilizzo</th>
-                    <th>Supporto browsers</th>
-                </tr>
-                <tr>
-                    <td>2000</td>
-                    <td>20%</td>
-                    <td>17%</td>
-                </tr>
-                <tr>
-                    <td>2002</td>
-                    <td>35%</td>
-                    <td>22%</td>
-                </tr>
-                <tr>
-                    <td>2004</td>
-                    <td>45%</td>
-                    <td>42%</td>
-                </tr>
-                <tr>
-                    <td>2008</td>
-                    <td>80%</td>
-                    <td>51%</td>
-                </tr>
-                <tr>
-                    <td>2012</td>
-                    <td>100%</td>
-                    <td>76%</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Anno</th>
+                        <th>% di utilizzo</th>
+                        <th>Supporto browsers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000</td>
+                        <td>20%</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>35%</td>
+                        <td>22%</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>45%</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>80%</td>
+                        <td>51%</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>100%</td>
+                        <td>76%</td>
+                    </tr>
+                </tbody>
+                
             </table>
 
             <p>
-                Un test di validazione potrà essere fatto tramite il tool online <a href="#">-LINK ESTERNO-</a> dedicato allo scopo.
+                Un test di validazione potrà essere fatto tramite il tool online <a href="#">LINK ESTERNO</a> dedicato allo scopo.
                 Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
             </p>
 
@@ -99,17 +110,17 @@
         <section>
             <h3>Articoli correlati</h3>
             <div>
-                <h4>Validare il codice HTML</h4>
+                <a href="#">Validare il codice HTML</a>
                 <p>Categoria: develop</p>
                 <p>Data: 18-9-2020</p>
             </div>
             <div>
-                <h4>Corregere la sintassi</h4>
+                <a href="#">Corregere la sintassi</a>
                 <p>Categoria: develop</p>
                 <p>Data: 16-9-2020</p>
             </div>
             <div>
-                <h4>Meno Kb nella pagina</h4>
+                <a href="#">Meno Kb nella pagina</a>
                 <p>Categoria: ottimizzazione</p>
                 <p>Data: 30-9-2020</p>
             </div>
