@@ -1,0 +1,64 @@
+#logo img{
+    width: 200px;
+}
+
+header{
+    text-align: center;
+}
+
+article{
+    margin: 0 auto;
+    width: 40%; 
+}
+
+#banner{
+    text-align: center;
+    color: rgb(0, 77, 76);
+    background-color: rgb(254, 251, 242);
+    border-top: rgb(255, 235, 186) 2px solid;
+}
+
+#testo{
+    margin: auto;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.container2{
+    background-color: rgb(254, 251, 242);
+    border-left: rgb(255, 235, 186) 2px solid;
+}
+
+#testo2{
+    font-weight: lighter;
+    color: rgb(188, 87, 39);
+}
+
+.container2, a{
+    color: rgb(54, 135, 135);
+}
+
+#imgP{
+    border-radius: 1.5%;
+    width: 100%;
+}
+#grey{
+    color: rgb(153, 153, 153);
+}
+
+.container3, h2{
+    font-weight: lighter;
+}
+
+
+#item{
+    font-weight: 600;
+}
+
+#item2{
+    list-style: none;
+}
