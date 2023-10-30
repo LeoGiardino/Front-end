@@ -59,6 +59,8 @@ const name = "Leo";
 name = "Giardino";
 console.log(name);
 
+ERRORE
+
 */
 
 /* ESERCIZIO 6
