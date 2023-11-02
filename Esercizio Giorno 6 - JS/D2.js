@@ -37,7 +37,7 @@ if(num != 5) {
 
 let num = 10;
 
-if(num % 5 == 0){
+if(num % 5 === 0){
   console.log(num + " è divisibile per 5");
 }else{
   console.log(num + " non è divisibile per 5");
@@ -246,5 +246,6 @@ console.log(arr);
 arr[9] = 100;
 
 console.log(arr);
+
 
 
