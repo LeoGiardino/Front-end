@@ -234,14 +234,35 @@ console.log(longest(arr2));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function filtro(emailContent){
-    
+
+    let paroleProibite = ["spam", "scam"];
+
+    let valore;
+
+    for(let i=0; i < paroleProibite.length; i++){
+
+        if(emailContent.includes(paroleProibite[i])){
+            valore = false;
+            break;
+        }else{
+            valore = true;
+        }
+    }
+
+    return valore;
 }
+
+let messaggio = "Questa   email non ";
+
+console.log(filtro(messaggio));
 
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
