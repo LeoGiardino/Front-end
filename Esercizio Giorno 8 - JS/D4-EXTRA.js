@@ -252,7 +252,7 @@ function filtro(emailContent){
     return valore;
 }
 
-let messaggio = "Questa   email non ";
+let messaggio = "Questa email non è spam";
 
 console.log(filtro(messaggio));
 
