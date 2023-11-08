@@ -36,17 +36,37 @@ console.log(random());
 */
 
 
-
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-
 let pari = arr.filter((nPari) => nPari % 2 === 0);
+
+/*
+  const getPari = (myArr) => myArr.filter(nPari => nPari % 2 === 0);
+
+  console.log(getPari([2,3,4,5,6,7,8,]));
+*/
 
 console.log(pari);
 
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
+*/
+
+/*
+
+  const somma = function (x){
+
+    let somma = 0;
+
+    x.forEach((val) => somma += val);
+
+    return somma;
+
+  }
+
+  console.log(somma(arr));
+
 */
 
 
@@ -68,6 +88,16 @@ console.log(somma(arr));
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+/*
+
+  const sommaNumeriReduce = function(arr){
+    return arr.reduce((somma, ele) => somma += ele, 0)
+  }
+
+  console.log(sommaNumeriReduce(arr));
+
+*/
+
 function somma2(x){
 
   let somma = x.reduce((total, val) => {
@@ -87,6 +117,15 @@ console.log(somma2(arr));
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
+/*
+  const addN = function (arr, n){
+    return arr.map(ele => ele +n);
+  }
+
+  console.log(addN(arr, n));
+*/
+
+
 function secondArr(n){
 
   let arr = [];
@@ -103,7 +142,7 @@ function secondArr(n){
 
 secondArr(5);
 
-/* ESERCIZIO 7 (map)
+/* ESERCIZIO 7 (map) Iterare ogni singolo elemente dell'array e modificarlo, inoltre crea un array nuovo
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
@@ -115,6 +154,8 @@ function stringhe(x){
 
   let newArr2 = x.map(val => val.length);
 
+  // return x.map(val => val.length);
+
   return newArr2;
 
 }
@@ -125,7 +166,8 @@ console.log(stringhe(newArr));
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-function arry(){
+// const getDispari = () => {}
+function getDispari(){
 
   let dispari = [];
 
@@ -137,7 +179,7 @@ function arry(){
   return dispari;
 }
 
-console.log(arry());
+console.log(getDispari());
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -258,20 +300,28 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+// Fuzione ESPRESSIONE
+// const getFilmVecchio = function() {}
 
 function old(x){
 
   let years = [];
 
+
+
   x.forEach(value => {
 
+    /*if(value.Year < years.Years){
+      years = value
+    }
+    */
     years.push(value.Year)
 
   });
   
     years.sort();
 
-    return years[years.length-1];
+    return years[0];
 }
 
 console.log(old(movies));
