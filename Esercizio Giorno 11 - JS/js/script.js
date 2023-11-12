@@ -1,151 +1,97 @@
-// Funzione per aggiungere un nuovo task alla lista
-function addTask() {
-    let list = document.querySelector("ul");
-    let input = document.querySelector("input");
-    let button = document.querySelector(".inputField button");
 
-    button.addEventListener('click', () => {
-        let inputValue = input.value;
-        let li = document.createElement("li");
-        li.innerText = inputValue;
-        list.appendChild(li);
-        input.value = '';
+let arr = [];
+let pendings = document.querySelector(".pendingTasks");
 
-        li.addEventListener('click', () => {
-            li.style.textDecoration = "line-through";
-        });
-
-    });
-}
-
-// Esegui le funzioni
 addTask();
+taskComplete();
+deleteTask();
+clearAll();
+pending();
 
 
-function taskComplete(){
 
-    let list = document.querySelectorAll("ul li");    
 
-    list.forEach(val => {
 
-        val.addEventListener('click', () =>{
+function addTask(){
 
-            val.style.textDecoration = "line-through"
+  let btn = document.querySelector(".inputField button");
+  let input = document.querySelector(".inputField input");
+  let lista = document.querySelector(".todoList");
+  
+
+  btn.addEventListener("click", () => {
+    let li = document.createElement("li");
+    li.innerHTML = `<span>${input.value} </span><button class="delete"><i class="fa-solid fa-trash"></i></button>`;
+    if(input.value.length > 2){
+      lista.appendChild(li);
+
+      arr.push(li)
+      console.log(arr.length);
+      pendings.innerText = arr.length;
+      console.log(arr);
+
+        let spans = li.querySelector("span");
+        spans.addEventListener("click", ()=> {
+          spans.classList.toggle("barra");
         })
-    })
+
+        let delBtn = li.querySelector(".delete");
+        delBtn.addEventListener("click", ()=>{
+          delBtn.parentNode.remove();
+          arr.pop();
+          console.log("elimino 1 " + arr.length);
+          pendings.innerText = arr.length;
+        })
+
+      input.value = "";
+      
+    }
+  })
 }
 
-taskComplete();
-
-
 function taskComplete(){
-
-    let list = document.querySelectorAll("ul li");    
-
-    list.forEach(val => {
-
-        val.addEventListener('click', () =>{
-
-            val.remove();
-        })
+  let spans = document.querySelectorAll(".todoList li > span");
+  spans.forEach(span => {
+    span.addEventListener("click", ()=> {
+      span.classList.toggle("barra");
     })
-}
-taskComplete();
+  })
+} 
 
+function deleteTask() {
+  let delBtns = document.querySelectorAll(".delete");
 
+  delBtns.forEach(delBtn => {
+    delBtn.addEventListener("click", () => {
+      delBtn.parentNode.remove();
+      arr.pop(); 
+      pendings.innerText = arr.length;
 
-
-function addButtonToListItems() {
-    let listItems = document.querySelectorAll("ul li");
-
-    listItems.forEach(item => {
-        
-        item.addEventListener('mouseover', () => {
-            button.style.display = 'inline-block'; 
-        });
-
-        button.addEventListener('click', () => {
-            item.remove(); // Rimuove l'elemento <li> quando il bottone viene cliccato
-        });
-
-        item.addEventListener('mouseout', () => {
-            button.style.display = 'none'; // Nasconde il bottone quando ti sposti dall'elemento <li>
-        });
     });
-}
-
-addButtonToListItems();
-
-/*
-
-// getting all required elements
-const inputBox = document.querySelector(".inputField input");
-const addBtn = document.querySelector(".inputField button");
-const todoList = document.querySelector(".todoList");
-const deleteAllBtn = document.querySelector(".footer button");
-
-// onkeyup event
-inputBox.onkeyup = ()=>{
-  let userEnteredValue = inputBox.value; //getting user entered value
-  if(userEnteredValue.trim() != 0){ //if the user value isn't only spaces
-    addBtn.classList.add("active"); //active the add button
-  }else{
-    addBtn.classList.remove("active"); //unactive the add button
-  }
-}
-
-showTasks(); //calling showTask function
-
-addBtn.onclick = ()=>{ //when user click on plus icon button
-  let userEnteredValue = inputBox.value; //getting input field value
-  let getLocalStorageData = localStorage.getItem("New Todo"); //getting localstorage
-  if(getLocalStorageData == null){ //if localstorage has no data
-    listArray = []; //create a blank array
-  }else{
-    listArray = JSON.parse(getLocalStorageData);  //transforming json string into a js object
-  }
-  listArray.push(userEnteredValue); //pushing or adding new value in array
-  localStorage.setItem("New Todo", JSON.stringify(listArray)); //transforming js object into a json string
-  showTasks(); //calling showTask function
-  addBtn.classList.remove("active"); //unactive the add button once the task added
-}
-
-function showTasks(){
-  let getLocalStorageData = localStorage.getItem("New Todo");
-  if(getLocalStorageData == null){
-    listArray = [];
-  }else{
-    listArray = JSON.parse(getLocalStorageData); 
-  }
-  const pendingTasksNumb = document.querySelector(".pendingTasks");
-  pendingTasksNumb.textContent = listArray.length; //passing the array length in pendingtask
-  if(listArray.length > 0){ //if array length is greater than 0
-    deleteAllBtn.classList.add("active"); //active the delete button
-  }else{
-    deleteAllBtn.classList.remove("active"); //unactive the delete button
-  }
-  let newLiTag = "";
-  listArray.forEach((element, index) => {
-    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
   });
-  todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
-  inputBox.value = ""; //once task added leave the input field blank
 }
 
-// delete task function
-function deleteTask(index){
-  let getLocalStorageData = localStorage.getItem("New Todo");
-  listArray = JSON.parse(getLocalStorageData);
-  listArray.splice(index, 1); //delete or remove the li
-  localStorage.setItem("New Todo", JSON.stringify(listArray));
-  showTasks(); //call the showTasks function
+function clearAll(){
+
+  let btn = document.querySelector(".clear");
+  btn.addEventListener("click", ()=>{
+    let ul = document.querySelector(".todoList");
+    ul.innerHTML = "";
+    arr.length = 0;
+    pendings.innerText = arr.length;
+
+  })
+
 }
 
-// delete all tasks function
-deleteAllBtn.onclick = ()=>{
-  listArray = []; //empty the array
-  localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
-  showTasks(); //call the showTasks function
+function pending(){
+
+  let li = document.querySelectorAll("li");
+
+  li.forEach(val =>{
+    arr.push(val)
+  })
+  pendings.innerText = arr.length;
+
 }
 
-*/

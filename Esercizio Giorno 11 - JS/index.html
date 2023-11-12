@@ -10,24 +10,23 @@
 <body>
 
 
-    <div class="wrapper">
-        <header>Todo App</header>
+    <div class="container">
+        <h2>Todo App</h2>
         <div class="inputField">
           <input type="text" placeholder="Add your new todo">
           <button><i class="fas fa-plus"></i></button>
         </div>
         <ul class="todoList">
-            <li>Studiare React</li>
-            <li>Studiare Php</li>
-            <li>Studiare DB</li>
+            <li><span>Studiare React </span><button class="delete"><i class="fa-solid fa-trash"></i></button></li>
+            <li><span>Studiare Php </span><button class="delete"><i class="fa-solid fa-trash"></i></button></li>
+            <li><span>Studiare Java </span><button class="delete"><i class="fa-solid fa-trash"></i></button></li>
+    
         </ul>
         <div class="footer">
           <span>You have <span class="pendingTasks"></span> pending tasks</span>
-          <button>Clear All</button>
+          <button class="clear">Clear All</button>
         </div>
       </div>
-    
-    
 
     <script src="../Esercizio Giorno 11 - JS/js/script.js">
 
