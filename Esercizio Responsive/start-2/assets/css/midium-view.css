@@ -1,0 +1,42 @@
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* Regole CSS per questo intervallo di dimensioni */
+
+    header ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    header ul > li{
+        padding-right: 3%;
+    }
+
+   
+   .html55{
+    width: 18%;
+    border: 3px solid #00a0c6;
+    outline: 3px solid #a82264;
+    width: 6rem;
+    padding: 3px;
+   }
+
+   article table{
+    margin: 10% 0% 10% 20%;
+   }
+
+   section h2{
+    background-color: rgb(163, 163, 163);
+    text-transform: none;
+    font-weight: bold;
+   }
+
+   form input{
+    width: 75%;
+    padding: 2% 3%;
+   }
+
+   form button{
+    padding: 2% 3%;
+   }
+
+   
+}

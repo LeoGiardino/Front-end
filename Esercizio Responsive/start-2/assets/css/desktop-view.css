@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px) {
+    /* Regole CSS per questo intervallo di dimensioni e superiori */
+
+    header{
+        padding: 2% 2%;
+    }
+
+    header, header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1em;
+    }
+
+    header div img{
+        margin-bottom: 0;
+    }
+
+    header div{
+        align-items: end;
+    }
+
+    header ul > li{
+        padding-right: 3%;
+    }
+
+    nav{
+        width: 30%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: end;
+    }
+
+    .html55{
+        width: 18%;
+        border: 3px solid #00a0c6;
+        outline: 3px solid #a82264;
+        width: 6rem;
+        padding: 3px;
+       }
+
+    table{
+        width: 100%;
+    
+    }
+
+    .tabella{
+        padding: 5% 10%;
+    }
+
+    .gigty{
+        display: flex;
+    }
+
+    iframe{
+        width: 50%;
+        margin-bottom: 2em;
+        border-radius: 20px;
+    }
+
+    .gigty section{
+        width: 50%;
+        margin-bottom: 2em;
+        border-radius: 20px;
+    }
+
+    section h2{
+        background-color: rgb(163, 163, 163);
+        text-transform: none;
+        font-weight: bold;
+       }
+
+       form input{
+        width: 75%;
+        padding: 2% 3%;
+       }
+    
+       form button{
+        padding: 2% 3%;
+       }
+
+       .articoli{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+       }
+    
+       .articoli div{
+        width: 40%;
+        margin: 0;
+       }
+
+
+}
