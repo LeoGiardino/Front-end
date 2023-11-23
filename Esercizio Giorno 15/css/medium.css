@@ -1,0 +1,211 @@
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    .container{
+        display: flex;
+    }
+
+    main{
+        padding: 4% 2% 4% 5%;
+        width: 70%;
+    }
+
+    header{
+        width: 25%;
+        
+    }
+
+    nav{
+        background-color: rgb(254, 247, 226);
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        padding: 10% 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button:nth-child(1){
+        background-color: rgb(255, 224, 127);
+        width: 100%;
+        border-radius: 96px 96px 96px 96px / 105px 105px 105px 105px;
+        height: 85px;
+        border: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: rgb(115, 34, 3);
+        order: 0;
+        margin: 10px 0;
+    }
+    button:nth-child(2){
+        background-color: rgb(255, 224, 127);
+        width: 100%;
+        border-radius: 96px 96px 96px 96px / 105px 105px 105px 105px;
+        height: 85px;
+        border: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: rgb(115, 34, 3);
+        margin: 10px 0;
+        order: 0;
+    }
+    button:nth-child(3){
+        background-color: rgb(255, 224, 127);
+        order: -1;
+        border-radius: 96px 96px 96px 96px / 105px 105px 105px 105px;
+        height: 85px;
+        border: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(115, 34, 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button:nth-child(4){
+        background-color: rgb(255, 224, 127);
+        width: 100%;
+        border-radius: 96px 96px 96px 96px / 105px 105px 105px 105px;
+        height: 85px;
+        border: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: rgb(115, 34, 3);
+        margin: 10px 0;
+    }
+    button:nth-child(5){
+        background-color: rgb(255, 224, 127);
+        width: 100%;
+        border-radius: 96px 96px 96px 96px / 105px 105px 105px 105px;
+        height: 85px;
+        border: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: rgb(115, 34, 3);
+        margin: 10px 0;
+    }
+
+    button img{
+        width: 25%;
+        margin-right: 15px;
+    }
+
+    h1{
+        color: rgb(115, 34, 3);
+        font-size: 3.9em;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 0;
+   
+    }
+
+    article{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        background-color: rgb(254, 247, 226);
+        border-radius: 10%;
+        width: 30%;
+        overflow: hidden;
+        color: rgb(115, 34, 3);
+        margin-bottom: 10%;
+    }
+
+    .cards:nth-child(4){
+        display: none;
+    }
+
+    .cards:last-child{
+        display: none;
+    }
+
+    .bottone{
+        display: flex;
+        justify-content: center;
+    }
+    div > img{
+        width: 100%;
+        height: auto; /* Mantiene le proporzioni originali dell'immagine */
+         /* Assicura che l'immagine abbia un bordo rotondo */
+        display: block;
+    }
+
+    .descrizione{
+        display: flex;
+        font-size: 1.1em;
+        margin-top: 3%;
+    }
+
+    .descrizione div:nth-child(1){
+        width: 80%;
+        padding-left: 10%;
+    }
+
+    .descrizione div:nth-child(1) p:first-child{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .descrizione div:nth-child(1) p:last-child{
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .descrizione div:nth-child(2){
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descrizione div:nth-child(2) p{
+        font-size: 0.9em;
+    }
+
+    .cards button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+        width: 60%;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    h2{
+        color: rgb(115, 34, 3);
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    section{
+        border-radius: 30px;
+
+        padding: 3% 5%;
+        background-color: rgb(254, 247, 226);
+        color: rgb(115, 34, 3);
+    }
+
+    section p:first-child{
+        font-size: 1.9em;
+        font-weight: bold;
+    }
+
+    #secondo{
+        font-size: 1.4em;
+        margin-bottom: 10%;
+    }
+
+    section img{
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+}

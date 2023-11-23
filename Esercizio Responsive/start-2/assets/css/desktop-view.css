@@ -92,6 +92,33 @@
         width: 40%;
         margin: 0;
        }
+}
 
+@media print {
+    header, .gigty, aside, footer{
+        display: none;
+    }
 
+    .html55{
+        width: 18%;
+        border: 3px solid #00a0c6;
+        outline: 3px solid #a82264;
+        width: 6rem;
+        padding: 3px;
+    }
+
+    article div{
+        display: inline;
+    }
+
+    article div + p{
+        display: inline;
+    }
+
+    th{
+        color: black;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    
 }
