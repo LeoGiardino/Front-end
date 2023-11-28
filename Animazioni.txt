@@ -1,0 +1,6 @@
+Animate CSS https://daneden.github.io/animate.css/
+Hover CSS http://ianlunn.github.io/Hover/
+Animista http://animista.net/
+Motion UI https://zurb.com/playground/motion-ui
+All Animation https://all-animation.github.io/
+Woah http://www.joerezendes.com/projects/Woah.css/
