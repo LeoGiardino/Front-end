@@ -1,0 +1,12 @@
+/* --- FONT --- */ 
+
+
+$font:  Arial, Helvetica, sans-serif;
+
+$fsize : 2em;
+
+
+
+@mixin title-big(){
+    font-size: 3em;
+}

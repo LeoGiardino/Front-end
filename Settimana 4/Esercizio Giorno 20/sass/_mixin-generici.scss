@@ -1,0 +1,12 @@
+/* --- MIXIN --- */ 
+
+
+@mixin floating(){
+    border-radius: 1px;
+    box-shadow: 0;
+    border: 0;
+}
+
+@mixin grid($num){
+    display: flex;
+}
