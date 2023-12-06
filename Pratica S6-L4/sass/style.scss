@@ -1,0 +1,75 @@
+/* Style Scss */
+
+@import "overwrite";
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.campana {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //color: #d9d7e8;
+}
+
+.icone {
+    width: 150px;
+    span {
+        width: 20px;
+        height: 20px;
+        border: 3px solid white;
+    }
+    
+}
+
+.icona1 > span {
+    top: 0px;
+    right: -5px;
+  
+}
+
+.icona2 > span {
+    bottom: -10px;
+    
+}
+
+.banner img {
+    fill: #c28136 !important;
+}
+
+.card-footer .campana {
+    width: 30px;
+    height: 30px;
+}
+
+.footer1{
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer2 {
+    justify-content: end;
+    width:40%;
+    align-items: center;
+    i {
+        justify-content: end;
+        
+    }
+}
+
+.money p:first-child {
+    font-weight: bold;
+}
+
+.money p:last-child {
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+
+.stelle img {
+    width: 15px;
+}

@@ -1,0 +1,30 @@
+/* Style Overwrite */
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+
+$purple : #7550fe;
+$verde : rgb(36, 195, 121);
+$light-gray : rgb(188,168,255);
+$beige : rgb(253,238,218);
+$dark-white: rgb(245,244,248);
+$violaceo : #5c5776;
+$text-gray : #a5a2b7;
+$star : #f4c454;
+
+$custom-colors: ( 
+    "purple" : $purple,
+    "verde" : $verde,
+    "light-gray" : $light-gray,
+    "beige" : $beige,
+    "dark-white" : $dark-white,
+    "violaceo" : $violaceo,
+    "text-gray" : $text-gray,
+    "star" : $star
+    );
+
+$theme-colors : map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
