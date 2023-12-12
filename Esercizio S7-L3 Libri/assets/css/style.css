@@ -1,0 +1,50 @@
+/* Style scss */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 31;
+  background-color: white;
+}
+
+.bi-cart2 {
+  cursor: pointer;
+}
+
+.card {
+  height: 100%;
+  width: 14rem;
+  transition: transform 0.3s ease-in-out;
+}
+.card img {
+  height: 60%;
+}
+.card .card-body {
+  height: 40%;
+}
+.card .card-body div > p {
+  font-size: 1.2em;
+}
+.card:hover {
+  transform: scale(1.1);
+  z-index: 30;
+}
+
+/* --- MODAL --- */
+.modal-body > div {
+  width: 100%;
+  display: flex;
+}
+.modal-body > div .img {
+  width: 15%;
+}
+.modal-body > div .img img {
+  width: 100%;
+}
+.modal-body > div .libri-cart {
+  width: 80%;
+}
+
+/* --- CARRELLO --- */
+.notes {
+  font-size: 0.6em;
+}/*# sourceMappingURL=style.css.map */
