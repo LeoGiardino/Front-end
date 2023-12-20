@@ -9,7 +9,7 @@ function daje() {
     fetch(url, {
         method: 'GET',
         headers: {
-            Authorization: 'uxzUPPzGpMUuBpfVzIJWGrf4sn4TFf5osQm3sGwwmgfSfFtWkyv9MkOl' // Sostituisci con la tua chiave di accesso
+            Authorization: 'uxzUPPzGpMUuBpfVzIJWGrf4sn4TFf5osQm3sGwwmgfSfFtWkyv9MkOl' 
         }
     })
         .then(response => response.json())
@@ -18,12 +18,10 @@ function daje() {
             data = json;
             loadImg(json);
             console.log(data);
-   
 
         })
         .catch(error => console.log(error));
 }
-
 
 
 function loadImg(obj) {
@@ -71,8 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
             let sito = data.photos[index].photographer_url;
             localStorage.setItem('sito', sito);
             
-       
-
             window.location.href = "secondoPage.html";
             
         });

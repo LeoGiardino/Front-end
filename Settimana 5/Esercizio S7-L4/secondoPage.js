@@ -1,5 +1,6 @@
+
 document.addEventListener('DOMContentLoaded', function () {
-    // Recupera i dati dalla sessionStorage
+   
     const nome = localStorage.getItem('nome');
     const srcc = localStorage.getItem('srcc');
     const sito = localStorage.getItem('sito');
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
        function home (){
         const btn = document.querySelector("button");
         btn.addEventListener("click", function(){
-            console.log("we");
+
             window.location.href = "Starting-template.html";
             localStorage.clear();
         })
